@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            list-style: none;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .meal__planner {
+            border: 4px solid #d3d3d3;
+            padding: 18px;
+            width: 60vw;
+            max-width: 750px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .input__container {
+            display: flex;
+            gap: 10px;
+        }
+        #input__meal {
+            width: 46vw;
+            max-width: 550px;
+            border: 1px solid rgb(173, 168, 168);
+            border-radius: 2px;
+            height: 20px;
+            padding: 5px;
+        }
+        #btn__meal {
+            background-color: #2790e6;
+            color: #fff;
+            border: none;
+            border-radius: 2px;
+            padding: 5px;
+            width: 12vw;
+            max-width: 100px;
+            height: 30px;
+        }
+        .meal__list {
+            align-self: flex-start;
+            width: 100%;
+        }
+        .meal__list ul {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .meal__list__item {
+            padding: 5px;
+            background-color: #f1f1f1;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Aufgabben 3</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Aufgaben 3</h1>
+        <h2>Level-1_1 (forEach)</h2>
+        <ol id="drinkList">
+    
+        </ol>
+        <div class="aufgabe3__3">
+            <h2>Level-3_3 (mit innerHTML)</h2>
+            <div class="meal__planner">
+                <h3>Meal Planner</h3>
+                <div class="input__container">
+                    <input id="input__meal" type="text" placeholder="Enter meal name">
+                    <input id="btn__meal" type="button" value="Add Meal">
+                </div>
+                <select name="" id="week">
+                    <option value="">Week 1</option>
+                    <option value="">Week 2</option>
+                    <option value="">Week 3</option>
+                    <option value="">Week 4</option>
+                </select>
+                <div class="meal__list">
+                    <h3 id="week__title">Week 1</h3>
+                    <ul>
+                        <li class="meal__list__item">Pho</li>
+                        <li class="meal__list__item">Greek Salad</li>
+                        <li class="meal__list__item">Pizza</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="module" src="aufgaben3.ts"></script>
+</body>
+</html>
