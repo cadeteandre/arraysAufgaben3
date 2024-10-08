@@ -137,3 +137,20 @@ printOddNumbers();
 //  Array-TS-Iteration-Level-3_3 (mit innerHTML)
 // ====================================================
 console.log('%c Level-3_3 (mit innerHTML) ', 'background: black; color: yellow;');
+
+const week1: string[] = [];
+const week2: string[] = [];
+const week3: string[] = [];
+const week4: string[] = [];
+const inputMeal = document.querySelector('#input__meal') as HTMLInputElement;
+const btnMeal = document.querySelector('#btn__meal') as HTMLInputElement;
+const mealList = document.querySelector('.meal__list__items') as HTMLElement;
+
+let count: number = 0;
+btnMeal.addEventListener('click', () => {
+    week1.push(inputMeal.value);
+        mealList.innerHTML += `<li class="meal__list__item">${week1[count]}`;
+        count++;
+});
+
+// Es fehtl noch viele Sachen zu tun
